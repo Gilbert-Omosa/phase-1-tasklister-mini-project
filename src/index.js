@@ -41,3 +41,14 @@ taskForm.addEventListener('submit', function(event) {
   document.getElementById('durationInput').value = '';
   document.getElementById('dueDateInput').value = '';
 });
+
+// Function to delete a task
+function deleteTask(element) {
+  element.parentElement.remove(); // Remove the task's parent element (the list item)
+}
+
+// Function to edit a task
+function editTask(element) {
+  const listItem = element.parentElement; // Get the parent list item
+  const taskText = listItem.firstChild.textContent; // Get the text content of the task
+  const editedTask = prompt('Edit task:', taskText); // Prompt the user to edit the task
