@@ -30,3 +30,14 @@ taskForm.addEventListener('submit', function(event) {
     <button onclick="editTask(this)">Edit</button>
     <button onclick="deleteTask(this)">Delete</button>
   `;
+
+  // Add the new task to the task list
+  taskList.appendChild(listItem);
+
+  // Clear input fields after adding task
+  document.getElementById('taskInput').value = '';
+  document.getElementById('prioritySelect').value = 'low';
+  document.getElementById('userInput').value = '';
+  document.getElementById('durationInput').value = '';
+  document.getElementById('dueDateInput').value = '';
+});
