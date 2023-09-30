@@ -1,37 +1,74 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
-}
-
+/* Define global styles for the webpage body */
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  font-family: Arial, Helvetica, sans-serif; /* Set font family */
+  background-color: lightslategray; /* Set background color */
+  margin: 0; /* Remove default margin */
+  padding: 50px; /* Add padding around the content */
 }
 
-button {
-  font-size: 7px;
+/* Style for a container to hold the main content */
+.container {
+  width: 400px; /* Set maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: whitesmoke; /* Set background color of the container */
+  padding: 50px; /* Add padding inside the container */
+  border-radius: 50px; /* Apply border radius for rounded corners */
 }
 
-#main-content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+/* Style for the main heading */
+h1 {
+  text-align: center; /* Center-align the text */
+  margin-bottom: 25px; /* Add space below the heading */
 }
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+/* Style for labels within the form */
+label {
+  display: block; /* Display labels as blocks for proper formatting */
+  margin-bottom: 10px; /* Add space below the labels */
+}
+
+/* Style for input fields and select dropdown */
+input, select {
+  width: 100%; /* Make the width of input and select 100% */
+  padding: 10px; /* Add padding inside input and select */
+  margin-bottom: 10px; /* Add space below the inputs */
+  border: 1px solid black; /* Add a border */
+  border-radius: 5px; /* Apply border radius for rounded corners */
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+  width: auto; /* Adjust the width automatically */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  background-color: lightskyblue;
+}
+
+/* Style for the task list (unordered list) */
+ul {
+  list-style-type: none; /* Remove default list-style */
+  padding: 0; /* Remove padding for the list */
+}
+
+/* Style for each task item (list item) */
+li {
+  display: flex; /* Display as flex container for layout */
+  justify-content: space-between; /* Space evenly between content */
+  align-items: center; /* Center-align the content vertically */
+  padding: 10px; /* Add padding inside each task item */
+  border: 1px solid black; /* Add a border */
+  border-radius: 5px; /* Apply border radius for rounded corners */
+  margin-bottom: 10px; /* Add space below each task item */
+}
+
+/* Style for specific priority levels of tasks */
+li.high {
+  color: red; /* Set text color for high priority tasks to red */
+}
+
+li.medium {
+  color: orange; /* Set text color for medium priority tasks to orange */
+}
+
+li.low {
+  color: green; /* Set text color for low priority tasks to green */
 }
