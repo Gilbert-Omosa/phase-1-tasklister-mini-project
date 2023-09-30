@@ -12,3 +12,9 @@ taskForm.addEventListener('submit', function(event) {
   const userInput = document.getElementById('userInput').value;
   const durationInput = document.getElementById('durationInput').value;
   const dueDateInput = document.getElementById('dueDateInput').value;
+
+  // Check if the task input is empty, display an alert and return if it is
+  if (taskInput === '') {
+    alert('Please enter a task.');
+    return;
+  }
