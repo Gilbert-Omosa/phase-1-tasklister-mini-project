@@ -52,3 +52,9 @@ function editTask(element) {
   const listItem = element.parentElement; // Get the parent list item
   const taskText = listItem.firstChild.textContent; // Get the text content of the task
   const editedTask = prompt('Edit task:', taskText); // Prompt the user to edit the task
+
+  // If the user entered a new task, update the task text
+  if (editedTask) {
+    listItem.firstChild.textContent = editedTask;
+  }
+}
