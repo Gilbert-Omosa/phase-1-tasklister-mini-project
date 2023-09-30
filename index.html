@@ -1,57 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- Title of my HTML document -->
-  <title>Task Lister Project</title>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Title of my HTML document -->
+    <title>Task Lister Project</title>
 
-  <!-- Link to CSS stylesheet -->
-  <link rel="stylesheet" href="./style.css"> 
-</head>
-<body>
-  <div class="container">
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="./style.css"> 
+  </head>
+  <body>
+    <div class="container">
 
-    <h1>Tasklister App ™️</h1>
-
-    <!-- Form element for capturing tasks -->
-    <form id="taskform" action="" method="POST">
-      <label for="taskInput">Task description:</label>
-      <input type="text" id="taskInput" name="new-task-description" placeholder="Enter a task">
-
-      <!-- Label for the priority dropdown -->
-      <label for="prioritySelect">Priority:</label> 
-
-      <!-- Dropdown for selecting task priority -->
-      <select id="prioritySelect"> 
-        <option value="low">Low</option> 
-        <option value="medium">Medium</option>
-        <option value="high">High</option> 
-      </select>
-
-      <!-- Label for the user input -->
-      <label for="userInput">User:</label>
-      <input type="text" id="userInput" placeholder="Enter user"> 
+      <h1>Tasklister App ™️</h1>
       
-      <!-- Label for the duration input -->
-      <label for="durationInput">Duration:</label>
-      <input type="text" id="durationInput" placeholder="Enter duration"> 
-      
-      <!-- Label for the due date input -->
-      <label for="dueDateInput">Due Date:</label> 
-      <input type="date" id="dueDateInput"> 
-      
-      <!-- Submit button to add a task -->
-      <input type="submit" value="Add Task">
-    </form>
+      <!-- Form element for capturing tasks -->
+      <form id="taskform" action="" method="POST">
+        <label for="taskInput">Task description:</label>
+        <input type="text" id="taskInput" name="new-task-description" placeholder="Enter a task">
 
-    <div id="list">
-      <h2>My Todos</h2>
-      <ul id="tasks">
+        <!-- Label for the priority dropdown -->
+        <label for="prioritySelect">Priority:</label> 
+
+        <!-- Dropdown for selecting task priority -->
+        <select id="prioritySelect"> 
+          <option value="low">Low</option> 
+          <option value="medium">Medium</option>
+          <option value="high">High</option> 
+        </select>
+
+        <!-- Label for the user input -->
+        <label for="userInput">User:</label>
+        <input type="text" id="userInput" placeholder="Enter user"> 
+              
+        <!-- Label for the duration input -->
+        <label for="durationInput">Duration:</label>
+        <input type="text" id="durationInput" placeholder="Enter duration"> 
+              
+        <!-- Label for the due date input -->
+        <label for="dueDateInput">Due Date:</label> 
+        <input type="date" id="dueDateInput"> 
+              
+        <!-- Submit button to add a task -->
+        <input type="submit" value="Add Task">
+      </form>
+
+      <ul id="tasklist">
+        <!-- My Tasks will be displayed here -->
       </ul>
     </div>
-
+    
+    <!-- link to JavaScript file -->
     <script src="./src/index.js"></script>
-  </div>
-
-</body>
+  </body>
 </html>
