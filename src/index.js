@@ -18,3 +18,15 @@ taskForm.addEventListener('submit', function(event) {
     alert('Please enter a task.');
     return;
   }
+
+  // Create a new list item (task) and set its content and class based on priority
+  const listItem = document.createElement('li');
+  listItem.classList.add(prioritySelect);
+  listItem.innerHTML = `
+    <span>${taskInput} - Priority: ${prioritySelect}</span>
+    <span>User: ${userInput}</span>
+    <span>Duration: ${durationInput}</span>
+    <span>Due Date: ${dueDateInput}</span>
+    <button onclick="editTask(this)">Edit</button>
+    <button onclick="deleteTask(this)">Delete</button>
+  `;
